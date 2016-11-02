@@ -73,6 +73,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnXemKetQua" destination="gax-a3-AAo" id="RTY-22-X3e"/>
                         <outlet property="lblKetQua" destination="f09-x0-IKw" id="Ym6-gr-Vb1"/>
                         <outlet property="txtDiem" destination="nSu-OH-TGp" id="DYH-3B-J2N"/>
                     </connections>
