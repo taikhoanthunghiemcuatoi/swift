@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XemKetQua" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSu-OH-TGp">
+                                <rect key="frame" x="139" y="40" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="7sf-gJ-AJb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diem:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-bJ-XOm">
+                                <rect key="frame" x="69" y="45" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gax-a3-AAo">
+                                <rect key="frame" x="135" y="86" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="zPJ-uf-RnM"/>
+                                </constraints>
+                                <state key="normal" title="Xem Ket Qua"/>
+                                <connections>
+                                    <action selector="xemKetQua:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2D-3z-Uut"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f09-x0-IKw">
+                                <rect key="frame" x="0.0" y="133" width="375" height="21"/>
+                                <color key="backgroundColor" red="0.14384379982948303" green="1" blue="0.95610505342483521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VY4-LS-EMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gax-a3-AAo" firstAttribute="centerX" secondItem="f09-x0-IKw" secondAttribute="centerX" id="7BZ-cA-Dnw"/>
+                            <constraint firstItem="nSu-OH-TGp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gld-fk-dHy"/>
+                            <constraint firstItem="nSu-OH-TGp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="LKo-ol-nB6"/>
+                            <constraint firstItem="KeS-bJ-XOm" firstAttribute="centerY" secondItem="nSu-OH-TGp" secondAttribute="centerY" id="M9P-Gs-Ley"/>
+                            <constraint firstItem="f09-x0-IKw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mic-AU-OEb"/>
+                            <constraint firstItem="gax-a3-AAo" firstAttribute="top" secondItem="nSu-OH-TGp" secondAttribute="bottom" constant="16" id="NCA-yb-cxz"/>
+                            <constraint firstItem="nSu-OH-TGp" firstAttribute="centerX" secondItem="f09-x0-IKw" secondAttribute="centerX" id="WqJ-I6-Cov"/>
+                            <constraint firstItem="KeS-bJ-XOm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="Zlc-pf-ac1"/>
+                            <constraint firstItem="nSu-OH-TGp" firstAttribute="leading" secondItem="KeS-bJ-XOm" secondAttribute="trailing" constant="8" symbolic="YES" id="eNr-Kp-vKe"/>
+                            <constraint firstItem="f09-x0-IKw" firstAttribute="top" secondItem="gax-a3-AAo" secondAttribute="bottom" constant="17" id="iJb-u7-Oho"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblKetQua" destination="f09-x0-IKw" id="Ym6-gr-Vb1"/>
+                        <outlet property="txtDiem" destination="nSu-OH-TGp" id="DYH-3B-J2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
