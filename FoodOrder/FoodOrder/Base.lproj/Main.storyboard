@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodOrder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bun bo Hue" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqM-xa-2Zn">
+                                <rect key="frame" x="197" y="88" width="162" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="KG0-rK-53y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zIN-CV-VYv">
+                                <rect key="frame" x="16" y="83" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Quang" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-nL-Aak">
+                                <rect key="frame" x="197" y="127" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7o5-yX-dFg">
+                                <rect key="frame" x="16" y="122" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bun cha gio" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVH-6T-cRa">
+                                <rect key="frame" x="197" y="166" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-A6-AwJ">
+                                <rect key="frame" x="16" y="161" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hu tieu Nam Vang" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zij-zZ-c6w">
+                                <rect key="frame" x="197" y="205" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KOh-XP-nKE">
+                                <rect key="frame" x="16" y="200" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Com tam suon" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caH-O8-4gr">
+                                <rect key="frame" x="197" y="244" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-bO-N4W">
+                                <rect key="frame" x="16" y="239" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-LN-4qk">
+                                <rect key="frame" x="167" y="295" width="40" height="30"/>
+                                <state key="normal" title="Order"/>
+                                <connections>
+                                    <action selector="orderFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mQ-lY-im2"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="KiN-bl-QYN">
+                                <rect key="frame" x="16" y="340" width="343" height="213"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtM-CO-ph1">
+                                <rect key="frame" x="0.0" y="37" width="375" height="32"/>
+                                <color key="backgroundColor" red="0.55082452297210693" green="1" blue="0.29317763447761536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vqM-xa-2Zn" firstAttribute="leading" secondItem="Mhy-nL-Aak" secondAttribute="leading" id="4Uo-Fz-0AN"/>
+                            <constraint firstItem="XEa-LN-4qk" firstAttribute="top" secondItem="caH-O8-4gr" secondAttribute="bottom" constant="30" id="6yu-wA-wzM"/>
+                            <constraint firstItem="KiN-bl-QYN" firstAttribute="top" secondItem="XEa-LN-4qk" secondAttribute="bottom" constant="15" id="A9s-K8-n4y"/>
+                            <constraint firstItem="xtM-CO-ph1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="Ccj-6W-P4d"/>
+                            <constraint firstItem="Mhy-nL-Aak" firstAttribute="leading" secondItem="QVH-6T-cRa" secondAttribute="leading" id="Dzw-NZ-ffS"/>
+                            <constraint firstItem="7o5-yX-dFg" firstAttribute="top" secondItem="zIN-CV-VYv" secondAttribute="bottom" constant="8" symbolic="YES" id="Dzx-Jo-bLu"/>
+                            <constraint firstItem="xtM-CO-ph1" firstAttribute="centerX" secondItem="XEa-LN-4qk" secondAttribute="centerX" id="G48-Nu-fPe"/>
+                            <constraint firstItem="vqM-xa-2Zn" firstAttribute="trailing" secondItem="Mhy-nL-Aak" secondAttribute="trailing" id="G9Y-Rf-kKM"/>
+                            <constraint firstItem="QVH-6T-cRa" firstAttribute="leading" secondItem="zij-zZ-c6w" secondAttribute="leading" id="IcV-fX-fEl"/>
+                            <constraint firstItem="zij-zZ-c6w" firstAttribute="leading" secondItem="caH-O8-4gr" secondAttribute="leading" id="JZF-gC-TaM"/>
+                            <constraint firstItem="zIN-CV-VYv" firstAttribute="leading" secondItem="7o5-yX-dFg" secondAttribute="leading" id="K76-ro-5It"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KiN-bl-QYN" secondAttribute="bottom" constant="114" id="KUt-Lj-srv"/>
+                            <constraint firstItem="vOq-A6-AwJ" firstAttribute="top" secondItem="7o5-yX-dFg" secondAttribute="bottom" constant="8" symbolic="YES" id="Ktp-yO-FHf"/>
+                            <constraint firstItem="vOq-A6-AwJ" firstAttribute="centerY" secondItem="QVH-6T-cRa" secondAttribute="centerY" id="QUa-ih-ngh"/>
+                            <constraint firstItem="7o5-yX-dFg" firstAttribute="leading" secondItem="vOq-A6-AwJ" secondAttribute="leading" id="REh-dE-3wg"/>
+                            <constraint firstItem="zIN-CV-VYv" firstAttribute="top" secondItem="xtM-CO-ph1" secondAttribute="bottom" constant="14" id="RUJ-9e-nTP"/>
+                            <constraint firstItem="KOh-XP-nKE" firstAttribute="centerY" secondItem="zij-zZ-c6w" secondAttribute="centerY" id="Rfa-Pk-61h"/>
+                            <constraint firstItem="KOh-XP-nKE" firstAttribute="leading" secondItem="NCe-bO-N4W" secondAttribute="leading" id="XFT-kS-jWw"/>
+                            <constraint firstItem="KOh-XP-nKE" firstAttribute="top" secondItem="vOq-A6-AwJ" secondAttribute="bottom" constant="8" symbolic="YES" id="XlC-JO-i18"/>
+                            <constraint firstItem="7o5-yX-dFg" firstAttribute="centerY" secondItem="Mhy-nL-Aak" secondAttribute="centerY" id="aYS-Xc-3UD"/>
+                            <constraint firstItem="zIN-CV-VYv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cov-Qj-ngc"/>
+                            <constraint firstItem="vqM-xa-2Zn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="daD-vy-RmV"/>
+                            <constraint firstItem="vOq-A6-AwJ" firstAttribute="leading" secondItem="KOh-XP-nKE" secondAttribute="leading" id="eKa-TH-uTk"/>
+                            <constraint firstItem="xtM-CO-ph1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hZy-Aq-aVV"/>
+                            <constraint firstItem="KiN-bl-QYN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jmd-p4-cTx"/>
+                            <constraint firstItem="zij-zZ-c6w" firstAttribute="trailing" secondItem="caH-O8-4gr" secondAttribute="trailing" id="lcF-Lc-KuG"/>
+                            <constraint firstItem="Mhy-nL-Aak" firstAttribute="trailing" secondItem="QVH-6T-cRa" secondAttribute="trailing" id="lrB-GQ-boU"/>
+                            <constraint firstAttribute="trailing" secondItem="xtM-CO-ph1" secondAttribute="trailing" id="nmM-mO-2sA"/>
+                            <constraint firstItem="XEa-LN-4qk" firstAttribute="centerX" secondItem="KiN-bl-QYN" secondAttribute="centerX" constant="-0.5" id="nsg-rO-Kra"/>
+                            <constraint firstItem="QVH-6T-cRa" firstAttribute="trailing" secondItem="zij-zZ-c6w" secondAttribute="trailing" id="ps9-Yz-Bdd"/>
+                            <constraint firstItem="NCe-bO-N4W" firstAttribute="top" secondItem="KOh-XP-nKE" secondAttribute="bottom" constant="8" symbolic="YES" id="qRv-Nk-mhp"/>
+                            <constraint firstItem="zIN-CV-VYv" firstAttribute="centerY" secondItem="vqM-xa-2Zn" secondAttribute="centerY" id="uNT-hB-8eS"/>
+                            <constraint firstItem="NCe-bO-N4W" firstAttribute="centerY" secondItem="caH-O8-4gr" secondAttribute="centerY" id="uXI-fe-eAs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblMon1" destination="vqM-xa-2Zn" id="Mdn-8a-0Hh"/>
+                        <outlet property="lblMon2" destination="Mhy-nL-Aak" id="Y15-ym-hsA"/>
+                        <outlet property="lblMon3" destination="QVH-6T-cRa" id="0f2-oZ-BKz"/>
+                        <outlet property="lblMon4" destination="zij-zZ-c6w" id="p8g-bY-y9U"/>
+                        <outlet property="lblMon5" destination="caH-O8-4gr" id="2jU-vm-o7e"/>
+                        <outlet property="swhMon1" destination="zIN-CV-VYv" id="4tQ-rJ-mWY"/>
+                        <outlet property="swhMon2" destination="7o5-yX-dFg" id="5xC-uA-Pgz"/>
+                        <outlet property="swhMon3" destination="vOq-A6-AwJ" id="geK-E7-79L"/>
+                        <outlet property="swhMon4" destination="KOh-XP-nKE" id="03m-bq-pyD"/>
+                        <outlet property="swhMon5" destination="NCe-bO-N4W" id="7uo-yG-MsH"/>
+                        <outlet property="tvwFoodOrder" destination="KiN-bl-QYN" id="c4f-kn-ygM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
