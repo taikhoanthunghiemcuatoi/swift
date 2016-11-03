@@ -21,9 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5j-1x-9fW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQa-rd-q6H">
                                 <rect key="frame" x="164" y="617" width="46" height="30"/>
                                 <constraints>
@@ -34,25 +31,42 @@
                                     <action selector="pickPhotos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FoX-am-0Le"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99P-0r-QgH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5j-1x-9fW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="o5j-1x-9fW" firstAttribute="centerY" secondItem="99P-0r-QgH" secondAttribute="centerY" id="38J-5q-RXG"/>
+                                    <constraint firstAttribute="bottom" secondItem="o5j-1x-9fW" secondAttribute="bottom" id="KyD-rO-Wjg"/>
+                                    <constraint firstItem="o5j-1x-9fW" firstAttribute="centerX" secondItem="99P-0r-QgH" secondAttribute="centerX" id="Z7N-mf-B5x"/>
+                                    <constraint firstItem="o5j-1x-9fW" firstAttribute="leading" secondItem="99P-0r-QgH" secondAttribute="leading" id="iHE-z4-5wR"/>
+                                    <constraint firstAttribute="trailing" secondItem="o5j-1x-9fW" secondAttribute="trailing" id="kX6-uc-cvH"/>
+                                    <constraint firstItem="o5j-1x-9fW" firstAttribute="top" secondItem="99P-0r-QgH" secondAttribute="top" id="uB6-Yy-vwB"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DQa-rd-q6H" firstAttribute="top" secondItem="o5j-1x-9fW" secondAttribute="bottom" constant="18" id="F2L-i8-1Nf"/>
-                            <constraint firstItem="o5j-1x-9fW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HOX-6N-boO"/>
-                            <constraint firstItem="o5j-1x-9fW" firstAttribute="centerX" secondItem="DQa-rd-q6H" secondAttribute="centerX" id="Tee-6o-GQK"/>
-                            <constraint firstAttribute="trailing" secondItem="o5j-1x-9fW" secondAttribute="trailing" id="hif-jh-kGG"/>
-                            <constraint firstItem="o5j-1x-9fW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mhh-ls-nMO"/>
+                            <constraint firstItem="DQa-rd-q6H" firstAttribute="top" secondItem="99P-0r-QgH" secondAttribute="bottom" constant="8" symbolic="YES" id="EjW-RG-cqm"/>
+                            <constraint firstItem="99P-0r-QgH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eEg-ua-hZq"/>
+                            <constraint firstAttribute="trailing" secondItem="99P-0r-QgH" secondAttribute="trailing" id="i5e-ZK-nZv"/>
                             <constraint firstAttribute="bottom" secondItem="DQa-rd-q6H" secondAttribute="bottom" constant="20" symbolic="YES" id="sJe-1e-SuY"/>
+                            <constraint firstItem="99P-0r-QgH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tKm-RP-WgJ"/>
+                            <constraint firstItem="99P-0r-QgH" firstAttribute="centerX" secondItem="DQa-rd-q6H" secondAttribute="centerX" id="vOW-9y-Jnf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnPicker" destination="DQa-rd-q6H" id="3xa-37-t2B"/>
                         <outlet property="imageView" destination="o5j-1x-9fW" id="Wel-Du-zsL"/>
+                        <outlet property="svwImage" destination="99P-0r-QgH" id="qAV-BX-a4n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="120"/>
+            <point key="canvasLocation" x="-826.39999999999998" y="119.1904047976012"/>
         </scene>
     </scenes>
 </document>
