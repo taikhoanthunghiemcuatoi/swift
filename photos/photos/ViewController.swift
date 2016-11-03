@@ -48,5 +48,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
+    
+    @IBAction func shareImage(_ sender: Any) {
+        let objectsToShare : [Any] = ["Wow! Amazing image!", imageView.image!]
+        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
+    }
 }
 
