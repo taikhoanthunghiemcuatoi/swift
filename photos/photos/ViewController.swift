@@ -50,9 +50,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func shareImage(_ sender: Any) {
-        let objectsToShare : [Any] = ["Wow! Amazing image!", imageView.image!]
-        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-        self.present(activityVC, animated: true, completion: nil)
+        if let img = imageView.image{
+            let objectsToShare : [Any] = ["Wow! Amazing image!", img]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            self.present(activityVC, animated: true, completion: nil)
+        }else{
+            let alertController = UIAlertController(title: "Warning!", message: "No image picked. Please pick one!", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+
     }
 }
 
